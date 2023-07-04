@@ -19,13 +19,13 @@ app.use(errorHandler);
 
 //listen port
 app.listen(port,()=>{
-    console.log("server Started",port);
+    console.log("server Started...",port);
 })
 
 
 mongoose.set('strictQuery', true); //dout neet to check
 mongoose.connect("mongodb+srv://rajapandib29:Raja%401999@cluster0.vq5ct9x.mongodb.net/cmsnode?retryWrites=true&w=majority").then(()=>{
-    console.log("db connected");
+    console.log("db connected...");
 }).catch((e)=>{
     console.log("db not connected",e);
 })
